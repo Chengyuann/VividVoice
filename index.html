@@ -1,425 +1,564 @@
 <!DOCTYPE html>
-<html lang="en">
+</html>
 <head>
+
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <meta name="title" content="PAPER_TITLE - AUTHOR_NAMES">
-  <meta name="description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
-  <meta name="keywords" content="KEYWORD1, KEYWORD2, KEYWORD3, machine learning, computer vision, AI">
-  <meta name="author" content="FIRST_AUTHOR_NAME, SECOND_AUTHOR_NAME">
-  <meta name="robots" content="index, follow">
-  <meta name="language" content="English">
-  
-  <meta property="og:type" content="article">
-  <meta property="og:site_name" content="INSTITUTION_OR_LAB_NAME">
-  <meta property="og:title" content="PAPER_TITLE">
-  <meta property="og:description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
-  <meta property="og:url" content="https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE">
-  <meta property="og:image" content="https://YOUR_DOMAIN.com/static/images/social_preview.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="PAPER_TITLE - Research Preview">
-  <meta property="article:published_time" content="2025-09-08T00:00:00.000Z">
-  <meta property="article:author" content="FIRST_AUTHOR_NAME">
-  <meta property="article:section" content="Research">
-  <meta property="article:tag" content="KEYWORD1">
-  <meta property="article:tag" content="KEYWORD2">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="RAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
 
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:site" content="@YOUR_TWITTER_HANDLE">
-  <meta name="twitter:creator" content="@AUTHOR_TWITTER_HANDLE">
-  <meta name="twitter:title" content="PAPER_TITLE">
-  <meta name="twitter:description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
-  <meta name="twitter:image" content="https://YOUR_DOMAIN.com/static/images/social_preview.png">
-  <meta name="twitter:image:alt" content="PAPER_TITLE - Research Preview">
-
-  <meta name="citation_title" content="PAPER_TITLE">
-  <meta name="citation_author" content="FIRST_AUTHOR_LAST, FIRST_AUTHOR_FIRST">
-  <meta name="citation_author" content="SECOND_AUTHOR_LAST, SECOND_AUTHOR_FIRST">
-  <meta name="citation_publication_date" content="2025">
-  <meta name="citation_conference_title" content="CONFERENCE_NAME">
-  <meta name="citation_pdf_url" content="https://YOUR_DOMAIN.com/static/pdfs/paper.pdf">
-  
-  <meta name="theme-color" content="#2563eb">
-  <meta name="msapplication-TileColor" content="#2563eb">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="default">
-  
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://ajax.googleapis.com">
-  <link rel="preconnect" href="https://documentcloud.adobe.com">
-  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>PAPER_TITLE - AUTHOR_NAMES | Academic Research</title>
-  
+  <title> AutoStyle-TTS:Retrieval-Augmented Generation based Automatic Style Matching Text-to-Speech Synthesis </title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
-  <link rel="apple-touch-icon" href="static/images/favicon.ico">
-  
-  <link rel="stylesheet" href="static/css/bulma.min.css">
-  <link rel="stylesheet" href="static/css/index.css">
-  
-  <link rel="preload" href="static/css/fontawesome.all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <link rel="preload" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  
-  <noscript>
-    <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-  </noscript>
-  
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  
-  <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script defer src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
-  <script defer src="static/js/fontawesome.all.min.js"></script>
-  <script defer src="static/js/index.js"></script>
-  
-  <style>
-    .results-grid .column {
-        padding: 0.5rem;
-    }
-    .results-grid video {
-        width: 100%;
-        border-radius: 8px;
-        border: 1px solid #dbdbdb;
-        box-shadow: 0 2px 3px rgba(10, 10, 10, 0.05);
-    }
-    .grid-header {
-        font-weight: bold;
-        text-align: center;
-        margin-bottom: 0.5rem;
-    }
-    .grid-label {
-        font-weight: bold;
-        text-align: center;
-        margin-top: 1rem;
-    }
-    .conference-info {
-        font-weight: 600;
-        margin-bottom: 1.5rem;
-    }
-  </style>
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
 
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "ScholarlyArticle",
-    "headline": "PAPER_TITLE",
-    "description": "BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS",
-    "author": [
-      {
-        "@type": "Person",
-        "name": "FIRST_AUTHOR_NAME",
-        "affiliation": {
-          "@type": "Organization",
-          "name": "INSTITUTION_NAME"
-        }
-      },
-      {
-        "@type": "Person",
-        "name": "SECOND_AUTHOR_NAME",
-        "affiliation": {
-          "@type": "Organization",
-          "name": "INSTITUTION_NAME"
-        }
-      }
-    ],
-    "datePublished": "2025-09-08",
-    "publisher": {
-      "@type": "Organization",
-      "name": "CONFERENCE_OR_JOURNAL_NAME"
-    },
-    "url": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE",
-    "image": "https://YOUR_DOMAIN.com/static/images/social_preview.png",
-    "keywords": ["KEYWORD1", "KEYWORD2", "KEYWORD3", "machine learning", "computer vision"],
-    "abstract": "FULL_ABSTRACT_TEXT_HERE",
-    "citation": "BIBTEX_CITATION_HERE",
-    "isAccessibleForFree": true,
-    "license": "https://creativecommons.org/licenses/by/4.0/",
-    "mainEntity": {
-      "@type": "WebPage",
-      "@id": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE"
-    }
-  }
-  </script>
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
 </head>
 <body>
 
 
-  <button class="scroll-to-top" onclick="scrollToTop()" title="Scroll to top" aria-label="Scroll to top">
-    <i class="fas fa-chevron-up"></i>
-  </button>
-
-  <div class="more-works-container">
-    <button class="more-works-btn" onclick="toggleMoreWorks()" title="View More Works from Our Lab">
-      <i class="fas fa-flask"></i>
-      More Works
-      <i class="fas fa-chevron-down dropdown-arrow"></i>
-    </button>
-    <div class="more-works-dropdown" id="moreWorksDropdown">
-      <div class="dropdown-header">
-        <h4>More Works from Our Lab</h4>
-        <button class="close-btn" onclick="toggleMoreWorks()">
-          <i class="fas fa-times"></i>
-        </button>
-      </div>
-      <div class="works-list">
-        <a href="https://arxiv.org/abs/PAPER_ID_1" class="work-item" target="_blank">
-          <div class="work-info">
-            <h5>Paper Title 1</h5>
-            <p>Brief description of the work and its main contribution.</p>
-            <span class="work-venue">Conference/Journal 2024</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-        <a href="https://arxiv.org/abs/PAPER_ID_2" class="work-item" target="_blank">
-          <div class="work-info">
-            <h5>Paper Title 2</h5>
-            <p>Brief description of the work and its main contribution.</p>
-            <span class="work-venue">Conference/Journal 2023</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-      </div>
-    </div>
-  </div>
-
-  <main id="main-content">
   <section class="hero">
     <div class="hero-body">
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h3 class="subtitle is-4 conference-info">
-              Conference on Computer Vision and Pattern Recognition (CVPR) 2025
-            </h3>
-            
-            <h1 class="title is-1 publication-title">Your Awesome Academic Project Title</h1>
-            
+            <h1 class="title is-1 publication-title">🎙️AutoStyle-TTS:Retrieval-Augmented Generation based Automatic Style Matching Text-to-Speech Synthesis</h1>
             <div class="is-size-5 publication-authors">
-              <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>1,*</sup>,
-              </span>
-              <span class="author-block">
-                <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>2,*</sup>,
-              </span>
-              <span class="author-block">
-                <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a><sup>1</sup>
-              </span>
-            </div>
+              <!-- Paper authors -->
+<!--               <span class="author-block">
+                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author*</a><sup>*</sup>,</span>
+                <span class="author-block">
+                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author*</a><sup>*</sup>,</span>
+                  <span class="author-block">
+                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
+                  </span>
+                  </div> -->
 
-            <div class="is-size-5 publication-authors">
-              <span class="author-block"><sup>1</sup>Institution Name One,</span>
-              <span class="author-block"><sup>2</sup>Institution Name Two</span>
-              <br><span class="eql-cntrb"><small><sup>*</sup>Indicates Equal Contribution</small></span>
-            </div>
+<!--                   <div class="is-size-5 publication-authors">
+                    <span class="author-block"><sup>1</sup>Institution1,</span> -->
+<!--                     <br>Conferance name and year</span> -->
+<!--                     <span class="author-block"><sup>2</sup>Institution2</span>
+                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+                  </div> -->
 
-            <div class="column has-text-centered">
-              <div class="publication-links">
-                <span class="link-block">
-                  <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon"><i class="fas fa-file-pdf"></i></span>
-                    <span>Paper</span>
-                  </a>
-                </span>
-                <span class="link-block">
-                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon"><i class="ai ai-arxiv"></i></span>
-                    <span>arXiv</span>
-                  </a>
-                </span>
-                <span class="link-block">
-                  <a href="https://github.com/YOUR_REPO_HERE" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon"><i class="fab fa-github"></i></span>
+<!--                   <div class="column has-text-centered">
+                    <div class="publication-links">
+                         <!-- Arxiv PDF link -->
+<!--                       <span class="link-block">
+                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span> --> 
+
+                    <!-- Supplementary PDF link -->
+<!--                     <span class="link-block">
+                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                      </span>
+                      <span>Supplementary</span>
+                    </a>
+                  </span> -->
+
+                  <!-- Github link -->
+<!--                   <span class="link-block">
+                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
                     <span>Code</span>
                   </a>
-                </span>
-                <span class="link-block">
-                  <a href="https://youtu.be/VIDEO_ID" target="_blank"
+                </span> -->
+
+                <!-- ArXiv abstract Link -->
+<!--                 <span class="link-block">
+                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
                   class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon"><i class="fab fa-youtube"></i></span>
-                    <span>Video</span>
-                  </a>
-                </span>
-              </div>
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span> -->
+<!--                   <span>arXiv</span> -->
+                </a>
+              </span>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section class="hero teaser">
-    <div class="container is-max-desktop">
-      <div class="hero-body">
-        <img src="static/images/teaser.png" alt="Teaser image for the project" style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-        <h2 class="subtitle has-text-centered" style="margin-top: 1rem;">
-          A short, compelling description of what this teaser image shows. This is the hook to get people interested in your work.
-        </h2>
-      </div>
-    </div>
-  </section>
-  <section class="section hero is-light">
-    <div class="container is-max-desktop">
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          <h2 class="title is-3">Abstract</h2>
-          <div class="content has-text-justified">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="section">
-      <div class="container is-max-desktop">
-          <div class="columns is-centered">
-              <div class="column is-full has-text-centered">
-                  <h2 class="title is-3">Method</h2>
-                  <img src="static/images/method_overview.png" alt="Method diagram" style="width: 100%; max-width: 900px; border-radius: 8px;"/>
-                  <div class="content has-text-justified" style="margin-top: 1rem;">
-                      <p>
-                          A brief description of the proposed method pipeline. This figure illustrates the key components of our framework, including the encoder, decoder, and the novel attention mechanism that enables our key contribution.
-                      </p>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </section>
-  <section class="section">
-    <div class="container is-max-desktop">
-      <h2 class="title is-3 has-text-centered">Qualitative Results</h2>
 
-      <div class="results-grid">
-        <h3 class="title is-4 has-text-centered">Example Application 1</h3>
-        <div class="columns is-centered is-vcentered">
-          <div class="column"><p class="grid-header">Source Input</p></div>
-          <div class="column"><p class="grid-header">Driving Input</p></div>
-          <div class="column"><p class="grid-header">Our Result</p></div>
-          <div class="column"><p class="grid-header">Ground Truth</p></div>
-        </div>
-        <div class="columns is-centered is-vcentered">
-          <div class="column">
-            <video poster="" controls muted loop preload="metadata"><source src="static/videos/source1.mp4" type="video/mp4"></video>
-          </div>
-          <div class="column">
-            <video poster="" controls muted loop preload="metadata"><source src="static/videos/driving1.mp4" type="video/mp4"></video>
-          </div>
-          <div class="column">
-            <video poster="" controls muted loop preload="metadata"><source src="static/videos/result1.mp4" type="video/mp4"></video>
-          </div>
-          <div class="column">
-            <video poster="" controls muted loop preload="metadata"><source src="static/videos/gt1.mp4" type="video/mp4"></video>
-          </div>
-        </div>
-        <div class="columns is-centered is-vcentered">
-          <div class="column">
-            <video poster="" controls muted loop preload="metadata"><source src="static/videos/source2.mp4" type="video/mp4"></video>
-          </div>
-          <div class="column">
-            <video poster="" controls muted loop preload="metadata"><source src="static/videos/driving2.mp4" type="video/mp4"></video>
-          </div>
-          <div class="column">
-            <video poster="" controls muted loop preload="metadata"><source src="static/videos/result2.mp4" type="video/mp4"></video>
-          </div>
-          <div class="column">
-            <video poster="" controls muted loop preload="metadata"><source src="static/videos/gt2.mp4" type="video/mp4"></video>
-          </div>
-        </div>
-      </div>
-      <div class="results-grid" style="margin-top: 2rem;">
-        <h3 class="title is-4 has-text-centered">Comparison with State-of-the-art</h3>
-        <div class="columns is-centered is-vcentered">
-          <div class="column"><p class="grid-header">Input</p></div>
-          <div class="column"><p class="grid-header">Baseline A</p></div>
-          <div class="column"><p class="grid-header">Baseline B</p></div>
-          <div class="column"><p class="grid-header">Ours</p></div>
-        </div>
-        <div class="columns is-centered is-vcentered">
-          <div class="column">
-            <video poster="" controls muted loop preload="metadata"><source src="static/videos/comp_input1.mp4" type="video/mp4"></video>
-          </div>
-          <div class="column">
-            <video poster="" controls muted loop preload="metadata"><source src="static/videos/comp_baselineA1.mp4" type="video/mp4"></video>
-          </div>
-          <div class="column">
-            <video poster="" controls muted loop preload="metadata"><source src="static/videos/comp_baselineB1.mp4" type="video/mp4"></video>
-          </div>
-          <div class="column">
-            <video poster="" controls muted loop preload="metadata"><source src="static/videos/comp_ours1.mp4" type="video/mp4"></video>
-          </div>
-        </div>
-      </div>
-      </div>
-  </section>
-  <section class="hero is-small is-light">
+<!-- Teaser video-->
+<!-- <section class="hero teaser">
+  <div class="container is-max-desktop">
     <div class="hero-body">
-      <div class="container">
-        <h2 class="title is-3">Video Presentation</h2>
-        <div class="columns is-centered has-text-centered">
-          <div class="column is-four-fifths">
-            <div class="publication-video">
-              <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-            </div>
-          </div>
-        </div>
-      </div>
+      <video poster="" id="tree" autoplay controls muted loop height="100%">
+        <!-- Your video here -->
+<!--         <source src="static/videos/banner_video.mp4"
+        type="video/mp4">
+      </video>
+      <h2 class="subtitle has-text-centered">
+        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
+      </h2>
     </div>
-  </section>
-  <section class="hero is-small">
-    <div class="hero-body">
-      <div class="container">
-        <h2 class="title is-3">Poster</h2>
-        <iframe src="static/pdfs/sample.pdf" width="100%" height="550"></iframe>
-      </div>
-    </div>
-  </section>
-  <section class="section" id="Acknowledgements">
-      <div class="container is-max-desktop content">
-          <h2 class="title">Acknowledgements</h2>
+  </div>
+</section> --> -->
+<!-- End teaser video -->
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
           <p>
-              This work was supported by Grant XYZ. We would like to thank our anonymous reviewers for their valuable feedback. We also thank Jane Doe for the insightful discussions.
+            With the advancement of speech synthesis technol
+ogy, users have higher expectations for the naturalness and
+ expressiveness of synthesized speech. But previous researches
+ ignore the importance of prompt selection. This study proposes a
+ text-to-speech (TTS) framework based on Retrieval-Augmented
+ Generation (RAG) technology, which can dynamically adjust
+ the speech style according to the text content to achieve more
+ natural and vivid communication effects. We have constructed a
+ speech style knowledge database containing high-quality speech
+ samples in various contexts and developed a style matching
+ scheme. This scheme uses embeddings, extracted by an LLama,
+ PER-LLM-Embedder,and moka, to match with samples in the
+ knowledge database, selecting the most appropriate speech style
+ for synthesis. Furthermore, our empirical research validates the
+ effectiveness of the proposed method.
           </p>
-      </div>
-  </section>
-  <section class="section" id="BibTeX">
-    <div class="container is-max-desktop content">
-      <div class="bibtex-header">
-        <h2 class="title">BibTeX</h2>
-        <button class="copy-bibtex-btn" onclick="copyBibTeX()" title="Copy BibTeX to clipboard">
-          <i class="fas fa-copy"></i>
-          <span class="copy-text">Copy</span>
-        </button>
-      </div>
-      <pre id="bibtex-code"><code>@inproceedings{Author2025YourPaper,
-    title={Your Awesome Academic Project Title},
-    author={Author, First and Author, Second and Author, Third},
-    booktitle={Conference on Computer Vision and Pattern Recognition (CVPR)},
-    year={2025}
-}</code></pre>
-    </div>
-  </section>
-  <footer class="footer">
-    <div class="container">
-      <div class="columns is-centered">
-        <div class="column is-8">
-          <div class="content">
-            <p>
-              This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page. You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
-              Commons Attribution-ShareAlike 4.0 International License</a>.
-            </p>
-          </div>
         </div>
       </div>
     </div>
-  </footer>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+
+<!-- Image carousel -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <!-- Add a paragraph title above the image -->
+      <h1 class="title is-4 has-text-left" style="margin-bottom: 20px;">💡 The structure of the proposed model</h1>
+      <div class="image-container">
+        <img src="static/images/db_re.jpg" alt="MY ALT TEXT" style="display: block; max-width: 100%; height: auto;" />
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- End image carousel -->
+
+
+
+
+<!-- Youtube video -->
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <!-- Main title -->
+      <h2 class="title is-3">🎧 Audio Demos</h2>
+      <p class="subtitle">Comparison with different methods for each text and conversation</p>
+
+      <!-- Single Sentence Demo -->
+      <h1 class="title is-4 has-text-centered">Single Sentence Demo</h1>
+      <table class="table is-bordered is-striped is-fullwidth">
+        <thead>
+          <tr>
+            <th>Text</th>
+            <th>CosyVoice</th>
+            <th>MaskGCT</th>
+            <th>Ours</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Row 1: 中文 -->
+          <tr>
+            <td>他们说李佳琦疯了</td>
+            <td>
+              <audio src="static/audio/cosyvoice_1.wav" controls preload=""></audio>
+            </td>
+            <td>
+              <audio src="static/audio/maskgct_1.wav" controls preload=""></audio>
+            </td>
+            <td>
+              <audio src="static/audio/ours_1.wav" controls preload=""></audio>
+            </td>
+          </tr>
+          <!-- Row 2: 中文 -->
+          <tr>
+            <td>我真的很难过？大家千万不要去健身。</td>
+            <td>
+              <audio src="static/audio/cosyvoice_2.wav" controls preload=""></audio>
+            </td>
+            <td>
+              <audio src="static/audio/maskgct_2.wav" controls preload=""></audio>
+            </td>
+            <td>
+              <audio src="static/audio/ours_2.wav" controls preload=""></audio>
+            </td>
+          </tr>
+          <!-- Row 3: 中文 -->
+          <tr>
+            <td>超白，你真的，在身上找，除了白，找不到别的</td>
+            <td>
+              <audio src="static/audio/cosyvoice_3.wav" controls preload=""></audio>
+            </td>
+            <td>
+              <audio src="static/audio/maskgct_3.wav" controls preload=""></audio>
+            </td>
+            <td>
+              <audio src="static/audio/ours_3.wav" controls preload=""></audio>
+            </td>
+          </tr>
+          <!-- Row 4: 英文 -->
+          <tr>
+            <td>Aw, okay, I called it. I totally called it.</td>
+            <td>
+              <audio src="static/audio/cosyvoice_4.wav" controls preload=""></audio>
+            </td>
+            <td>
+              <audio src="static/audio/maskgct_4.wav" controls preload=""></audio>
+            </td>
+            <td>
+              <audio src="static/audio/our_4.wav" controls preload=""></audio>
+            </td>
+          </tr>
+          <!-- Row 5: 英文 -->
+          <tr>
+            <td>I'm just saying, Capri is gorgeous.</td>
+            <td>
+              <audio src="static/audio/cosyvoice_5.wav" controls preload=""></audio>
+            </td>
+            <td>
+              <audio src="static/audio/maskgct_5.wav" controls preload=""></audio>
+            </td>
+            <td>
+              <audio src="static/audio/our_5.wav" controls preload=""></audio>
+            </td>
+          </tr>
+          <!-- Row 6: 英文 -->
+          <tr>
+            <td>Great. Now you got me in trouble.</td>
+            <td>
+              <audio src="static/audio/cosyvoice_6.wav" controls preload=""></audio>
+            </td>
+            <td>
+              <audio src="static/audio/maskgct_6.wav" controls preload=""></audio>
+            </td>
+            <td>
+              <audio src="static/audio/our_6.wav" controls preload=""></audio>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- Multi-Sentence Dialogue Demo -->
+      <h1 class="title is-4 has-text-centered">Multi-Sentence Dialogue Demo</h1>
+      <table class="table is-bordered is-striped is-fullwidth">
+        <thead>
+          <tr>
+            <th>Dialogue</th>
+            <th>CosyVoice</th>
+            <th>MaskGCT</th>
+            <th>Ours</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Group 1: English -->
+          <tr>
+            <td>
+              So, we're on the beach, and harrison gets down on one knee and says, marry me. <br>
+              Aw, okay, I called it. I totally called it. <br>
+              Well, congratulations, guys. And harrison, it's so nice to finally meet you.
+            </td>
+            <td>
+              <audio src="static/audio/cosyvoice_7.wav" controls preload=""></audio>
+            </td>
+            <td>
+              <audio src="static/audio/maskgct_7.wav" controls preload=""></audio>
+            </td>
+            <td>
+              <audio src="static/audio/ours_7.wav" controls preload=""></audio>
+            </td>
+          </tr>
+          <!-- Group 2: Chinese -->
+           <tr>
+            <td>
+              I'm just saying you know, you should enjoy the engagement, take some time, see if it feels right because you're not locked?<br>
+              Well, we are locked in, we're engaged.<br>
+              Does engagement mean nothing to you, brad?
+            </td>
+            <td>
+              <audio src="static/audio/cosyvoice_10.wav" controls preload=""></audio>
+            </td>
+            <td>
+              <audio src="static/audio/maskgct_10.wav" controls preload=""></audio>
+            </td>
+            <td>
+              <audio src="static/audio/ours_10.wav" controls preload=""></audio>
+            </td>
+          </tr>
+          <!-- Group 3: Chinese -->
+          <tr>
+            <td>
+              👨别有荣幸，可以让你在李佳琦直播间再次挑战一下你那个贯口吗？<br>
+              👩我跟你讲这个贯口有一段故事，在准备春晚的时候，压力非常大。有一天晚上我们在睡觉，然后梦到我在台上忘记贯口。<br>
+              👩我整个惊醒，然后背两套紫米煎饼，一套煎饼不放葱，一套煎饼只放葱。
+            </td>
+            <td>
+              <audio src="static/audio/cosyvoice_8.wav" controls preload=""></audio>
+            </td>
+            <td>
+              <audio src="static/audio/maskgct_8.wav" controls preload=""></audio>
+            </td>
+            <td>
+              <audio src="static/audio/ours_8.wav" controls preload=""></audio>
+            </td>
+          </tr>
+          <!-- Group 4: English -->
+          <tr>
+            <td>
+              👩然后呢，我健身了三个星期，我每天健身有氧加无氧，有一个半小时到两个小时，而且有时候是空腹的。<br>
+              👩然后前几天我没有忍住，我去上那个体重秤，因为我前几天跟宋祖儿去吃饭，然后她说你是不是胖了。我就想把菜全部扔在她脸上，然后我就去称体重。我称体重的那一刻，我立刻给刘胜怡发微信，我的天都塌了，115。
+            </td>
+            <td>
+              <audio src="static/audio/cosyvoice_9.wav" controls preload=""></audio>
+            </td>
+            <td>
+              <audio src="static/audio/maskgct_9.wav" controls preload=""></audio>
+            </td>
+            <td>
+              <audio src="static/audio/ours_9.wav" controls preload=""></audio>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+
+
+<!-- Long Dialogue Demo -->
+<h1 class="title is-4 has-text-centered">Long Dialogue Demo</h1>
+
+<!-- Dialogue1 -->
+<div class="box" style="margin-bottom: 30px;">
+  <h3 class="title is-4 has-text-centered">Dialogue1</h3>
+  <div style="max-height: 300px; overflow-y: auto; padding: 15px; border: 1px solid #ddd; border-radius: 8px; background-color: #f9f9f9;">
+    <p style="margin: 0; line-height: 1.6;">
+      <strong>👨 李佳琦：</strong> 所有人都没被她骗到，只有我被她骗到了。然后她就怎么样，你知道怎么样吗？<br>
+      <strong>👨 李佳琦：</strong> 就是直播间上讲的时候说，那我们来看一下，下一个获奖的品牌是谁吧。<br>
+      <strong>👨 李佳琦：</strong> 好，就是很没有那种就是生机活气。然后你知道我一下播，她干嘛吗？<br>
+      <strong>👩 金靖：</strong> 他说下班啦，谢谢大家，谢谢李佳琪，谢谢大家！<br>
+      <strong>👨 李佳琦：</strong> 真的，我好激动。我是没有看到你。我说原来女明星还可以这样子，原来工作收工了，还可以这个样子。<br>
+      <strong>👨 李佳琦：</strong> 嗯对，就觉得她真的特别特别好玩。<br>
+      <strong>👨 李佳琦：</strong> 他们说李佳琦疯了<br>
+      <strong>👩 金靖：</strong> 李佳琦真的疯了，在后边大喷口水<br>
+      <strong>👨 李佳琦：</strong> 别有荣幸，可以让你在李佳琦直播间再次挑战一下你那个贯口吗？<br>
+      <strong>👩 金靖：</strong> 我跟你讲这个贯口有一段故事，在准备春晚的时候，压力非常大。<br>
+      <strong>👩 金靖：</strong> 有一天晚上我们在睡觉，然后梦到我在台上忘记贯口。<br>
+      <strong>👩 金靖：</strong> 我整个惊醒，然后背两套紫米煎饼，一套煎饼不放葱，一套煎饼只放葱，五套绿豆煎饼，两套加啥也不加辣，一套加辣啥也不加，剩下啥啥也不加，五个茶叶蛋，两个笨鸡蛋，三个鹌鹑蛋，五个荷包蛋，荷包蛋两个单面煎，三个双面煎，单面煎的放酱油，双面煎的放辣椒酱，原味豆浆，三杯热乎的，两杯凉嗖的，一杯温暾的一杯温暾的还有一杯温暾的，三杯黑豆豆浆。<br>
+      <strong>👨 李佳琦：</strong> oh my god ，oh my god，我的天<br>
+      <strong>👩 金靖：</strong> 所有的成功都是努力来的，你也可以呦，前辈们<br>
+      <strong>👨 李佳琦：</strong> 其实我也会，你刚才那个，我连词都不用看，对，就是一个煎饼溜溜，四个溜溜五个溜溜溜溜，反正大家也听不清楚啊<br>
+      <strong>👩 金靖：</strong> 整个被刷掉，一审就被刷掉。<br>
+      <strong>👩 金靖：</strong> 咦？我看你头发也没有扎，就随便挽了一下，然后就有点卷曲<br>
+      <strong>👨 李佳琦：</strong> 我跟你说，我要卸妆了，所以头发就是一起来就是卷卷的。然后今天是两个麻花卷，要是另外一天，又是一个一个麻花卷。<br>
+      <strong>👨 李佳琦：</strong> 嗯，我也好想这样的，就是造型啊，这样就算我秃头，头都不会秃了。<br>
+      <strong>👨 李佳琦：</strong> 好啦好啦<br>
+      <strong>👩 金靖：</strong> 必须声明一下，直播间在发的红包，是我名义上的发红包，并不会从我今天的那个资金里扣。对对对，你要说清楚，免得被烙下话柄。<br>
+      <strong>👨 李佳琦：</strong> 看上去就是应该不会用护肤品吧，毕竟你是人间4月天，一出来就这么美。<br>
+      <strong>👩 金靖：</strong> 其实就是都对外的啦，就我们私下自己人说一说，当然要护肤啊，怎么可能不护肤呢，哪有这样的皮肤。<br>
+      <strong>👨 李佳琦：</strong> 所以那你的皮肤非常能打，你很白很白<br>
+      <strong>👨 李佳琦：</strong> 我在你身边没有出任何的问题。<br>
+      <strong>👨 李佳琦：</strong> 超白，你真的，在身上找，除了白，找不到别的<br>
+      <strong>👩 金靖：</strong> 还有更白的地方。想让大家看看我的优点。<br>
+      <strong>👨 李佳琦：</strong> 可以看一下，就是我们两个人在一起，金靖真的好白好白，所以你是天生白吗？<br>
+      <strong>👩 金靖：</strong> 真的天生白，像牛乳一样，不是，牛奶牛奶牛奶牛奶。。<br>
+      <strong>👨 李佳琦：</strong> 不是，牛乳也可以，牛奶也可以，一样的，就是牛奶，不用紧张，不用紧张，这个是很正常的啦！<br>
+      <strong>👨 李佳琦：</strong> 你为什么要笑，3、2、1，正经，不准笑。所以护肤是很重要的。<br>
+      <strong>👨 李佳琦：</strong> 早上起床应该是先刷牙还是先洗脸。<br>
+      <strong>👩 金靖：</strong> 其实我是先称体重。<br>
+      <strong>👨 李佳琦：</strong> 所以你现在有多重？<br>
+      <strong>👩 金靖：</strong> 李佳琪，我的天都塌了。<br>
+      <strong>👩 金靖：</strong> 疫情期间，我跟大家坦白说，本人104斤，然后我就想猛猛的减肥啊，减到95斤绝对不是问题，才10斤左右，是不是？<br>
+      <strong>👩 金靖：</strong> 然后我就觉得我再也不要用节食减肥了，反弹非常的快。<br>
+      <strong>👩 金靖：</strong> 然后就请了一个教练，他就说你千万不要在我们锻炼初期去称体重，因为那个健身会让你变重，我说变瘦，时间会告诉我们。<br>
+      <strong>👩 金靖：</strong> 然后呢，我健身了三个星期，我每天健身有氧加无氧，有一个半小时到两个小时，而且有时候是空腹的。<br>
+      <strong>👩 金靖：</strong> 然后前几天我没有忍住，我去上那个体重秤，因为我前几天跟宋祖儿去吃饭，然后她说你是不是胖了。<br>
+      <strong>👩 金靖：</strong> 我就想把菜全部扔在她脸上，然后我就去称体重。我称体重的那一刻，我立刻给刘胜怡发微信，我的天都塌了，115。<br>
+      <strong>👩 金靖：</strong> 我一下子，三个礼拜从104涨到115。我都我不知道我怎么了。
+    </p>
+  </div>
+  <div style="display: flex; justify-content: center; align-items: center; margin-top: 10px;">
+    <!-- 请替换以下src属性为实际的音频文件路径 -->
+    <audio src="static/audio/jinjing_lijiaqi.wav" controls preload="" aria-label="Dialogue1 - Ours Audio"></audio>
+  </div>
+</div>
+
+<!-- Dialogue2 -->
+<div class="box">
+  <h3 class="title is-4 has-text-centered">Dialogue2</h3>
+  <div style="max-height: 300px; overflow-y: auto; padding: 15px; border: 1px solid #ddd; border-radius: 8px; background-color: #f9f9f9;">
+    <p style="margin: 0; line-height: 1.6;">
+      <strong>👨 李佳琦：</strong> 没有关系，你有1.7米<br>
+      <strong>👩 金靖：</strong> 我只有1.63米，那是假的。<br>
+      <strong>👨 李佳琦：</strong> 那你的官方身高是谎报的？<br>
+      <strong>👩 金靖：</strong> 对，我还想让公司帮我改成1.78米<br>
+      <strong>👨 李佳琦：</strong> 那我不就是1.88米了？你知道我的身高是多少吗？<br>
+      <strong>👨 李佳琦：</strong> 跟五桶方便面的身高一样<br>
+      <strong>👩 金靖：</strong> 哦，真的，我们应该差不多吧。<br>
+      <strong>👨 李佳琦：</strong> 我好像比你再高一桶吧。<br>
+      <strong>👨 李佳琦：</strong> 好吧，那我们回到正题，你为什么突然提到你的体重？<br>
+      <strong>👩 金靖：</strong> 我真的很难过？大家千万不要去健身。<br>
+      <strong>👨 李佳琦：</strong> 哎，你说有一个人健身减肥竟然瘦了30斤哦~<br>
+      <strong>👩 金靖：</strong> 是谁？<br>
+      <strong>👨 李佳琦：</strong> 来就是对面的那个男孩子<br>
+      <strong>👨 李佳琦：</strong> 但是男孩跟女孩根本不一样，女孩有没有哎，有没有那个健身减肥的，在评论里面打起来，我三周胖了10斤，我经纪人都不知道，他已经在给我使眼色了，你快点说<br>
+      <strong>👨 李佳琦：</strong> 说不定你下个星期要胖了30斤。对不对？<br>
+      <strong>👨 李佳琦：</strong> 哎哎，你干嘛你干嘛？<br>
+      <strong>👩 金靖：</strong> 我整个离开啊<br>
+      <strong>👨 李佳琦：</strong> 好了，瘦了瘦了瘦了，说错了啦，好你是先刷牙再洗脸吗？<br>
+      <strong>👩 金靖：</strong> 不知道我现在还在生气<br>
+      <strong>👨 李佳琦：</strong> 你为自己的体重，你生你自己的气<br>
+      <strong>👩 金靖：</strong> 嗯对先刷牙，因为有时候口臭真的很严重，洗脸也不想洗了<br>
+      <strong>👨 李佳琦：</strong> 好，第二个问题，美丽的皮囊跟有趣的灵魂，你会选哪个<br>
+      <strong>👩 金靖：</strong> 当然是美丽的皮囊，谁要有趣的灵魂。你看我就是有有趣的灵魂。<br>
+      <strong>👨 李佳琦：</strong> 很好啊，大家都很爱你啊<br>
+      <strong>👩 金靖：</strong> 我不要你们爱我<br>
+      <strong>👨 李佳琦：</strong> 那你要干嘛？<br>
+      <strong>👩 金靖：</strong> 我想要我爱的人爱我<br>
+      <strong>👨 李佳琦：</strong> 但是有趣的灵魂会占很多的优势。<br>
+      <strong>👩 金靖：</strong> 因为有趣的灵魂会很耐看，到后面也会发现他很多的优点<br>
+      <strong>👨 李佳琦：</strong> 谁要耐看啊？你去问一个女生，她要好看还是要耐看？谁会想要耐看的呢？<br>
+      <strong>👨 李佳琦：</strong> OK好，第三个问题，你认为男生可以化妆吗？<br>
+      <strong>👩 金靖：</strong> 当然可以化妆？为什么不可以？为什么要给我们那么多限制？这个人生那么多人在给我们贴标签，说女生必须体重不过百？男生不能化妆，为什么？我们站起来！我就过百了。<br>
+      <strong>👨 李佳琦：</strong> 我就化妆了，对呀，我觉得男生是可以化妆的，只要是那种比较干净的妆，我觉得没有任何问题。<br>
+      <strong>👩 金靖：</strong> 当然浓妆我也OK，说实话真的<br>
+      <strong>👨 李佳琦：</strong> 嗯，好的，来，我们下一个问题。<br>
+      <strong>👨 李佳琦：</strong> 哭比笑好还是笑比哭好<br>
+      <strong>👨 李佳琦：</strong> 我觉得笑比哭好，因为哪怕我的天塌了，我的眼泪就在眼眶里打转，我还是告诉自己要坚强，相信教练三个月后，三个月后我们再见，我减肥成功了，再来直播间<br>
+      <strong>👨 李佳琦：</strong> 你有经过我的同意吗？<br>
+      <strong>👩 金靖：</strong> 完全没有，哈哈哈<br>
+      <strong>👨 李佳琦：</strong> 三个月之后，如果你瘦了，你要来佳琦直播间，他们都好爱你<br>
+      <strong>👨 李佳琦：</strong> 最后一个问题，我们来看睡不着跟起不来的人更痛苦？我选起不来，<br>
+      <strong>👨 李佳琦：</strong> 我选睡不着<br>
+      <strong>👩 金靖：</strong> 我觉得笑比哭好，因为哪怕我的天塌了，我的眼泪就在眼眶里打转，我还是告诉自己要坚强，相信教练三个月后，三个月后我们再见，我减肥成功了，再来直播间<br>
+      <strong>👨 李佳琦：</strong> 哦，因为我没有睡不着过的经历，我基本动不动就倒<br>
+      <strong>👩 金靖：</strong> 我没有起不来的经历<br>
+      <strong>👨 李佳琦：</strong> 真的吗？<br>
+      <strong>👨 李佳琦：</strong> 所以你是睡两个小时，喊你起来，就立马起来<br>
+      <strong>👩 金靖：</strong> 对，我是摩羯座。<br>
+    </p>
+  </div>
+  <div style="display: flex; justify-content: center; align-items: center; margin-top: 10px;">
+    <!-- 请替换以下src属性为实际的音频文件路径 -->
+    <audio src="static/audio/jinjing_lijiaqi_2.wav" controls preload="" aria-label="Dialogue1 - Ours Audio"></audio>
+  </div>
+</div>
+
+    </div>
+  </div>
+</section>
+            <!-- Add more long dialogue rows as needed -->
+
+
+<!-- End youtube video -->
+
+
+
+
+
+
+
+
+<!-- Paper poster -->
+<!-- <section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title">Poster</h2>
+
+      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
+          </iframe>
+        
+      </div>
+    </div>
+  </section> -->
+<!--End paper poster -->
+
+
+<!--BibTex citation -->
+<!--   <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>BibTex Code Here</code></pre>
+    </div>
+</section> -->
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
 
   </body>
-</html>
+  </html>
