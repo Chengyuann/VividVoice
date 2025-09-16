@@ -3,24 +3,22 @@
 <head>
 
   <meta charset="utf-8">
-  <meta name="description" content="AutoStyle-TTS Project Page">
-  <meta property="og:title" content="AutoStyle-TTS: Retrieval-Augmented TTS"/>
-  <meta property="og:description" content="Project page for AutoStyle-TTS, a RAG-based automatic style matching text-to-speech synthesis model."/>
-  <meta property="og:url" content="URL OF THE WEBSITE"/>
-  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta name="description" content="VividVoice Project Page">
+  <meta property="og:title" content="VividVoice: Scene-Aware Visually-Driven Speech Synthesis"/>
+  <meta property="og:description" content="Project page for VividVoice, a unified framework for generating speech with controllable acoustic scenes from multimodal (text and visual) prompts."/>
+  <meta property="og:url" content="YOUR_PROJECT_URL_HERE"/>
+  <meta property="og:image" content="static/images/vividvoice_banner.png" />
   <meta property="og:image:width" content="1200"/>
   <meta property="og:image:height" content="630"/>
 
-
-  <meta name="twitter:title" content="AutoStyle-TTS: Retrieval-Augmented TTS">
-  <meta name="twitter:description" content="Project page for AutoStyle-TTS, a RAG-based automatic style matching text-to-speech synthesis model.">
-  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:title" content="VividVoice: Scene-Aware Visually-Driven Speech Synthesis">
+  <meta name="twitter:description" content="Project page for VividVoice, a unified framework for generating speech with controllable acoustic scenes from multimodal (text and visual) prompts.">
+  <meta name="twitter:image" content="static/images/vividvoice_banner.png">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="keywords" content="TTS, Text-to-Speech, RAG, Style Matching, Speech Synthesis">
+  <meta name="keywords" content="Speech Synthesis, TTS, TTA, Multimodal, Scene-Aware, Visually-Driven, Controllable Audio">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-
-  <title>AutoStyle-TTS: Retrieval-Augmented Generation based Automatic Style Matching Text-to-Speech Synthesis</title>
+  <title>VividVoice: A Unified Framework for Scene-Aware Visually-Driven Speech Synthesis</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -42,23 +40,25 @@
 </head>
 <body>
 
-
   <section class="hero">
     <div class="hero-body">
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">🎙️AutoStyle-TTS: Retrieval-Augmented Generation based Automatic Style Matching Text-to-Speech Synthesis</h1>
+            <h1 class="title is-1 publication-title">🔊 VividVoice: A Unified Framework for Scene-Aware Visually-Driven Speech Synthesis</h1>
             <div class="is-size-5 publication-authors">
-              </a>
-     </span>
-   </div>
- </div>
-</div>
-</div>
-</div>
-</section>
-
+              <span class="author-block">Author Name 1,</span>
+              <span class="author-block">Author Name 2,</span>
+              <span class="author-block">Author Name 3</span>
+            </div>
+            <div class="is-size-5 publication-authors">
+                <span class="author-block">Your Institution</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
 <section class="section hero is-light">
   <div class="container is-max-desktop">
@@ -67,145 +67,142 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            With the advancement of speech synthesis technology, users have higher expectations for the naturalness and expressiveness of synthesized speech. But previous researches ignore the importance of prompt selection. This study proposes a text-to-speech (TTS) framework based on Retrieval-Augmented Generation (RAG) technology, which can dynamically adjust the speech style according to the text content to achieve more natural and vivid communication effects. We have constructed a speech style knowledge database containing high-quality speech samples in various contexts and developed a style matching scheme. This scheme uses embeddings, extracted by an LLama, PER-LLM-Embedder,and moka, to match with samples in the knowledge database, selecting the most appropriate speech style for synthesis. Furthermore, our empirical research validates the effectiveness of the proposed method.
+            Current text-to-audio models struggle with fine-grained control over the acoustic environment, as text prompts are often insufficient to describe complex physical scenes. To address this, we propose <strong>VividVoice</strong>, a unified framework for scene-aware speech synthesis driven by multimodal prompts. Our model can generate high-fidelity speech within a controllable acoustic environment, where the speech content is dictated by text, and the acoustic scene (e.g., background sounds, reverberation) is intuitively controlled by a visual image. At the core of our framework is the Decoupled Memory-based Scene-Voice Alignment (D-MSVA) module, an innovative architecture that explicitly disentangles speaker and environment characteristics from the mixed-modality inputs. Complemented by a contrastive decoupling supervision strategy, our model learns a robust, compositional representation of voice and scene. We also contribute a new, large-scale dataset specifically constructed for this task. Experiments show that VividVoice significantly outperforms existing methods in generating immersive, high-quality speech that is consistent with its multimodal context.
           </p>
         </div>
       </div>
     </div>
   </div>
 </section>
+
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
-      <h1 class="title is-4 has-text-left" style="margin-bottom: 20px;">💡 The structure of the proposed model</h1>
-      <div class="image-container">
-        <img src="static/images/db_re.jpg" alt="Model architecture diagram" style="display: block; max-width: 100%; height: auto;" />
+      <h1 class="title is-4 has-text-left" style="margin-bottom: 20px;">💡 Model Architecture</h1>
+      <div class="image-container has-text-centered">
+        <img src="static/images/vividvoice_architecture.png" alt="VividVoice model architecture diagram" style="max-width: 90%; height: auto;" />
       </div>
     </div>
   </div>
 </section>
+
 <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
       <h2 class="title is-3">🎧 Audio Demos</h2>
-      <p class="subtitle">Comparison with different methods for each text and conversation</p>
-
-      <h1 class="title is-4 has-text-centered">Single Sentence Demo (With Image Context)</h1>
+      
+      <h3 class="title is-4 has-text-centered" style="margin-top: 40px;">Demo 1: Controlling Acoustic Environment with Vision</h3>
+      <p class="subtitle has-text-centered">Listen to how the acoustic environment changes according to the visual scene, while the speaker's voice remains consistent.</p>
       <table class="table is-bordered is-striped is-fullwidth is-vcentered">
         <thead>
           <tr>
-            <th style="width: 15%;">Image Context</th>
-            <th>Text</th>
-            <th>CosyVoice</th>
-            <th>MaskGCT</th>
-            <th>Ours</th>
+            <th style="width: 20%;">Speaker Prompt</th>
+            <th>Scene 1: Forest</th>
+            <th>Scene 2: Library</th>
+            <th>Scene 3: Beach</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td><img src="static/images/context_1.jpg" alt="Context Image 1" style="width:120px; border-radius: 8px;"></td>
-            <td>他们说李佳琦疯了</td>
-            <td><audio src="static/audio/cosyvoice_1.wav" controls preload="none"></audio></td>
-            <td><audio src="static/audio/maskgct_1.wav" controls preload="none"></audio></td>
-            <td><audio src="static/audio/ours_1.wav" controls preload="none"></audio></td>
-          </tr>
-          <tr>
-            <td><img src="static/images/context_2.jpg" alt="Context Image 2" style="width:120px; border-radius: 8px;"></td>
-            <td>我真的很难过？大家千万不要去健身。</td>
-            <td><audio src="static/audio/cosyvoice_2.wav" controls preload="none"></audio></td>
-            <td><audio src="static/audio/maskgct_2.wav" controls preload="none"></audio></td>
-            <td><audio src="static/audio/ours_2.wav" controls preload="none"></audio></td>
-          </tr>
-          <tr>
-            <td><img src="static/images/context_4.jpg" alt="Context Image 4" style="width:120px; border-radius: 8px;"></td>
-            <td>Aw, okay, I called it. I totally called it.</td>
-            <td><audio src="static/audio/cosyvoice_4.wav" controls preload="none"></audio></td>
-            <td><audio src="static/audio/maskgct_4.wav" controls preload="none"></audio></td>
-            <td><audio src="static/audio/our_4.wav" controls preload="none"></audio></td>
+            <td><strong>Text:</strong> "The weather is really nice today."<br><strong>Speaker:</strong> Young Female</td>
+            <td>
+              <img src="static/images/scene_forest.jpg" alt="Forest" style="width:120px; border-radius: 8px; display:block; margin:auto;">
+              <audio src="static/audio/demo1/female_forest.wav" controls preload="none" style="width:100%; margin-top:10px;"></audio>
+            </td>
+            <td>
+              <img src="static/images/scene_library.jpg" alt="Library" style="width:120px; border-radius: 8px; display:block; margin:auto;">
+              <audio src="static/audio/demo1/female_library.wav" controls preload="none" style="width:100%; margin-top:10px;"></audio>
+            </td>
+            <td>
+              <img src="static/images/scene_beach.jpg" alt="Beach" style="width:120px; border-radius: 8px; display:block; margin:auto;">
+              <audio src="static/audio/demo1/female_beach.wav" controls preload="none" style="width:100%; margin-top:10px;"></audio>
+            </td>
           </tr>
         </tbody>
       </table>
-      <h1 class="title is-4 has-text-centered">Multi-Sentence Dialogue Demo</h1>
-      <table class="table is-bordered is-striped is-fullwidth">
-          </table>
-      
-      <h1 class="title is-4 has-text-centered">Long Dialogue Demo</h1>
-        </div>
+
+      <h3 class="title is-4 has-text-centered" style="margin-top: 40px;">Demo 2: Controlling Speaker Timbre in a Fixed Environment</h3>
+      <p class="subtitle has-text-centered">Listen to how the speaker's timbre changes according to the text prompt, while the acoustic environment remains consistent.</p>
+      <table class="table is-bordered is-striped is-fullwidth is-vcentered">
+        <thead>
+          <tr>
+            <th style="width: 20%;">Environment Prompt</th>
+            <th>Speaker 1: Young Male</th>
+            <th>Speaker 2: Elderly Female</th>
+            <th>Speaker 3: Child</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <img src="static/images/scene_street.jpg" alt="Street" style="width:120px; border-radius: 8px; display:block; margin:auto;">
+              <strong>Scene:</strong> City Street
+            </td>
+            <td>
+              <strong>Text:</strong> "I think I might be late."<br>
+              <audio src="static/audio/demo2/street_male.wav" controls preload="none" style="width:100%; margin-top:10px;"></audio>
+            </td>
+            <td>
+              <strong>Text:</strong> "The traffic is always so loud here."<br>
+              <audio src="static/audio/demo2/street_elderly.wav" controls preload="none" style="width:100%; margin-top:10px;"></audio>
+            </td>
+            <td>
+              <strong>Text:</strong> "Can we get some ice cream?"<br>
+              <audio src="static/audio/demo2/street_child.wav" controls preload="none" style="width:100%; margin-top:10px;"></audio>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3 class="title is-4 has-text-centered" style="margin-top: 40px;">Demo 3: Comparison with Baseline Models</h3>
+      <p class="subtitle has-text-centered">Direct comparison on the same multimodal prompt.</p>
+      <table class="table is-bordered is-striped is-fullwidth is-vcentered">
+        <thead>
+          <tr>
+            <th style="width: 15%;">Visual Context</th>
+            <th>Text</th>
+            <th>Baseline Model</th>
+            <th>VividVoice (Ours)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <img src="static/images/compare_context1.jpg" alt="Context Image 1" style="width:120px; border-radius: 8px;">
+            </td>
+            <td>A young woman speaks in a reverberant hall: "The echo in here is amazing."</td>
+            <td>
+              <audio src="static/audio/compare1/baseline.wav" controls preload="none"></audio>
+            </td>
+            <td>
+              <audio src="static/audio/compare1/ours.wav" controls preload="none"></audio>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img src="static/images/compare_context2.jpg" alt="Context Image 2" style="width:120px; border-radius: 8px;">
+            </td>
+            <td>An elderly man speaks on a windy mountain top: "You can hear the wind whistling."</td>
+            <td>
+              <audio src="static/audio/compare2/baseline.wav" controls preload="none"></audio>
+            </td>
+            <td>
+              <audio src="static/audio/compare2/ours.wav" controls preload="none"></audio>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </div>
 </section>
 
-<section class="section">
-  <div class="container">
-    <h2 class="title is-3 has-text-centered">Image-Contextualized Style TTS</h2>
-    <p class="subtitle is-5 has-text-centered">
-        Demonstrating how an input image can provide context to influence the style of the generated speech.
-    </p>
-
-    <div class="columns is-vcentered is-desktop" style="margin-top: 2rem; margin-bottom: 2rem;">
-        <div class="column is-one-third-desktop has-text-centered">
-            <img src="static/images/happy_person.jpg" alt="Happy person smiling" style="border-radius: 8px; max-width: 250px; margin: 0 auto; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-        </div>
-        <div class="column">
-            <div class="box">
-                <div class="content">
-                    <p><strong>Text:</strong> "I just heard the good news! That's fantastic!"</p>
-                </div>
-                <table class="table is-fullwidth">
-                    <tbody>
-                        <tr>
-                            <td style="width: 120px;"><strong>CosyVoice</strong></td>
-                            <td><audio src="static/audio/context_happy_cosy.wav" controls preload="none" style="width: 100%;"></audio></td>
-                        </tr>
-                        <tr>
-                            <td><strong>MaskGCT</strong></td>
-                            <td><audio src="static/audio/context_happy_mask.wav" controls preload="none" style="width: 100%;"></audio></td>
-                        </tr>
-                        <tr>
-                            <td><strong>Ours</strong></td>
-                            <td><audio src="static/audio/context_happy_ours.wav" controls preload="none" style="width: 100%;"></audio></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    </div>
-    <div class="columns is-vcentered is-desktop" style="margin-top: 2rem; margin-bottom: 2rem;">
-        <div class="column is-one-third-desktop has-text-centered">
-            <img src="static/images/sad_person.jpg" alt="Sad person looking down" style="border-radius: 8px; max-width: 250px; margin: 0 auto; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-        </div>
-        <div class="column">
-            <div class="box">
-                <div class="content">
-                    <p><strong>Text:</strong> "I guess it's over now. There's nothing we can do."</p>
-                </div>
-                <table class="table is-fullwidth">
-                    <tbody>
-                        <tr>
-                            <td style="width: 120px;"><strong>CosyVoice</strong></td>
-                            <td><audio src="static/audio/context_sad_cosy.wav" controls preload="none" style="width: 100%;"></audio></td>
-                        </tr>
-                        <tr>
-                            <td><strong>MaskGCT</strong></td>
-                            <td><audio src="static/audio/context_sad_mask.wav" controls preload="none" style="width: 100%;"></audio></td>
-                        </tr>
-                        <tr>
-                            <td><strong>Ours</strong></td>
-                            <td><audio src="static/audio/context_sad_ours.wav" controls preload="none" style="width: 100%;"></audio></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    </div>
-    </div>
-</section>
 <footer class="footer">
   <div class="container">
     <div class="columns is-centered">
       <div class="column is-8">
         <div class="content">
           <p>
-
+            This website is a project page for VividVoice. Template based on the <a href="https://nerfies.github.io/">Nerfies</a> project page.
           </p>
         </div>
       </div>
