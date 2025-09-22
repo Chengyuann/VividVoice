@@ -6,7 +6,7 @@
   <meta name="description" content="VividVoice Project Page">
   <meta property="og:title" content="VividVoice: Scene-Aware Visually-Driven Speech Synthesis"/>
   <meta property="og:description" content="Project page for VividVoice, a unified framework for generating speech with controllable acoustic scenes from multimodal (text and visual) prompts."/>
-  <meta property="og:url" content="YOUR_PROJECT_URL_HERE"/>
+  <meta property="og:url" content="https://chengyuann.github.io/VividVoice/"/>
   <meta property="og:image" content="static/images/vividvoice_banner.png" />
   <meta property="og:image:width" content="1200"/>
   <meta property="og:image:height" content="630"/>
@@ -47,9 +47,9 @@
           <div class="column has-text-centered">
             <h1 class="title is-1 publication-title">🔊 VividVoice: A Unified Framework for Scene-Aware Visually-Driven Speech Synthesis</h1>
             <div class="is-size-5 publication-authors">
-            </div>
+              </div>
             <div class="is-size-5 publication-authors">
-            </div>
+                </div>
           </div>
         </div>
       </div>
@@ -63,7 +63,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Current text-to-audio models struggle with fine-grained control over the acoustic environment, as text prompts are often insufficient to describe complex physical scenes. To address this, we propose <strong>VividVoice</strong>, a unified framework for scene-aware speech synthesis driven by multimodal prompts. Our model can generate high-fidelity speech within a controllable acoustic environment, where the speech content is dictated by text, and the acoustic scene (e.g., background sounds, reverberation) is intuitively controlled by a visual image. At the core of our framework is the Decoupled Memory-based Scene-Voice Alignment (D-MSVA) module, an innovative architecture that explicitly disentangles speaker and environment characteristics from the mixed-modality inputs. Complemented by a contrastive decoupling supervision strategy, our model learns a robust, compositional representation of voice and scene. We also contribute a new, large-scale dataset specifically constructed for this task. Experiments show that VividVoice significantly outperforms existing methods in generating immersive, high-quality speech that is consistent with its multimodal context.
+            We introduce and define a novel task—Scene-Aware Visually-Driven Speech Synthesis, aimed at addressing the limitations of existing speech generation models in creating immersive auditory experiences that align with the real physical world. To tackle the two core challenges of data scarcity and modality decoupling, we propose <strong>VividVoice</strong>, a unified generative framework. First, we constructed a large-scale, high-quality hybrid multimodal dataset, Vivid-210K, which, through an innovative programmatic pipeline, establishes a strong correlation between visual scenes, speaker identity, and audio for the first time. Second, we designed a core alignment module, D-MSVA, which leverages a decoupled memory bank architecture and a cross-modal hybrid supervision strategy to achieve fine-grained alignment from visual scenes to timbre and environmental acoustic features. Both subjective and objective experimental results provide strong evidence that VividVoice significantly outperforms existing baseline models in terms of audio fidelity, content clarity, and multimodal consistency. Our demo is available at <a href="https://chengyuann.github.io/VividVoice/">https://chengyuann.github.io/VividVoice/</a>.
           </p>
         </div>
       </div>
@@ -75,9 +75,15 @@
   <div class="hero-body">
     <div class="container">
       <h1 class="title is-4 has-text-left" style="margin-bottom: 20px;">💡 Model Architecture</h1>
-      <div class="image-container has-text-centered">
-        <img src="static/images/net.pdf" alt="VividVoice model architecture diagram" style="max-width: 90%; height: auto;" />
-      </div>
+      <div class="content has-text-centered">
+        <p>
+            For the best viewing experience, we recommend converting the PDF to an image (e.g., PNG) and using the code below.
+        </p>
+        <a href="static/images/net.pdf" target="_blank">
+          <img src="static/images/net.png" alt="VividVoice model architecture diagram" style="max-width: 90%; height: auto; border: 1px solid #ddd;"/>
+          <p>(Click to view PDF)</p>
+        </a>
+        </div>
     </div>
   </div>
 </section>
@@ -85,110 +91,77 @@
 <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
-      <h2 class="title is-3">🎧 Audio Demos</h2>
-      
-      <h3 class="title is-4 has-text-centered" style="margin-top: 40px;">Demo 1: Controlling Acoustic Environment with Vision</h3>
-      <p class="subtitle has-text-centered">Listen to how the acoustic environment changes according to the visual scene, while the speaker's voice remains consistent.</p>
+      <h2 class="title is-3 has-text-centered">🎧 Audio Demos: Comparison with Baselines</h2>
+       <p class="subtitle has-text-centered">
+        In each example, we provide the visual scene, the text prompt, the audio generated by a baseline model (VoiceLDM), and the audio generated by our proposed model (VividVoice).
+      </p>
+
+      <h3 class="title is-4" style="margin-top: 40px; border-bottom: 2px solid #dddddd; padding-bottom: 10px;">Environment: Sea</h3>
       <table class="table is-bordered is-striped is-fullwidth is-vcentered">
         <thead>
           <tr>
-            <th style="width: 20%;">Speaker Prompt</th>
-            <th>Scene 1: Forest</th>
-            <th>Scene 2: Library</th>
-            <th>Scene 3: Beach</th>
+            <th style="width: 20%;">Visual Scene</th>
+            <th style="width: 30%;">Text Prompt</th>
+            <th style="width: 25%;">VoiceLDM (Baseline)</th>
+            <th style="width: 25%;">VividVoice (Ours)</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td><strong>Text:</strong> "The weather is really nice today."<br><strong>Speaker:</strong> Young Female</td>
             <td>
-              <img src="static/images/scene_forest.jpg" alt="Forest" style="width:120px; border-radius: 8px; display:block; margin:auto;">
-              <audio src="static/audio/demo1/female_forest.wav" controls preload="none" style="width:100%; margin-top:10px;"></audio>
+              <img src="static/audio/sea/0Amg53UuRqE/0Amg53UuRqE_50001_fused_with_sea_10.jpg" alt="A rough coast" style="width:150px; border-radius: 8px;">
+            </td>
+            <td>"A woman speaks on the rough coast: I messed up real bad."</td>
+            <td>
+              <audio src="static/audio/sea/0Amg53UuRqE/007-A_woman_speaks_on_the_rough_coast-I_messed_up_real_bad.wav" controls preload="none" style="width: 100%;"></audio>
             </td>
             <td>
-              <img src="static/images/scene_library.jpg" alt="Library" style="width:120px; border-radius: 8px; display:block; margin:auto;">
-              <audio src="static/audio/demo1/female_library.wav" controls preload="none" style="width:100%; margin-top:10px;"></audio>
+              <audio src="static/audio/sea/0Amg53UuRqE/vivid_0Amg53UuRqE_zeroshot_normal_happy_50001_A_woman_speaks_on_the_rough_coast_I_messed_up_real_bad.wav" controls preload="none" style="width: 100%;"></audio>
+            </td>
+          </tr>
+           <tr>
+            <td>
+              <img src="static/audio/sea/0Amg53UuRqE/0Amg53UuRqE_50001_fused_with_sea_10.jpg" alt="A rough coast" style="width:150px; border-radius: 8px;">
+            </td>
+            <td>"A woman speaks on the rough coast: I can't believe I did that."</td>
+            <td>
+              <audio src="static/audio/sea/0Amg53UuRqE/008-A_woman_speaks_on_the_rough_coast-I_cant_believe_I_did_that.wav" controls preload="none" style="width: 100%;"></audio>
             </td>
             <td>
-              <img src="static/images/scene_beach.jpg" alt="Beach" style="width:120px; border-radius: 8px; display:block; margin:auto;">
-              <audio src="static/audio/demo1/female_beach.wav" controls preload="none" style="width:100%; margin-top:10px;"></audio>
+              <p><em>(Add corresponding VividVoice file)</em></p>
+              <audio src="static/audio/sea/0Amg53UuRqE/your_vividvoice_file_here.wav" controls preload="none" style="width: 100%;"></audio>
+            </td>
+          </tr>
+          </tbody>
+      </table>
+
+      <h3 class="title is-4" style="margin-top: 40px; border-bottom: 2px solid #dddddd; padding-bottom: 10px;">Environment: Forest</h3>
+      <table class="table is-bordered is-striped is-fullwidth is-vcentered">
+         <thead>
+          <tr>
+            <th style="width: 20%;">Visual Scene</th>
+            <th style="width: 30%;">Text Prompt</th>
+            <th style="width: 25%;">VoiceLDM (Baseline)</th>
+            <th style="width: 25%;">VividVoice (Ours)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <img src="static/audio/forest/subfolder/image_name.jpg" alt="Description of forest scene" style="width:150px; border-radius: 8px;">
+            </td>
+            <td>"Text prompt for the forest scene."</td>
+            <td>
+              <audio src="static/audio/forest/subfolder/baseline_audio.wav" controls preload="none" style="width: 100%;"></audio>
+            </td>
+            <td>
+              <audio src="static/audio/forest/subfolder/vividvoice_audio.wav" controls preload="none" style="width: 100%;"></audio>
             </td>
           </tr>
         </tbody>
       </table>
 
-      <h3 class="title is-4 has-text-centered" style="margin-top: 40px;">Demo 2: Controlling Speaker Timbre in a Fixed Environment</h3>
-      <p class="subtitle has-text-centered">Listen to how the speaker's timbre changes according to the text prompt, while the acoustic environment remains consistent.</p>
-      <table class="table is-bordered is-striped is-fullwidth is-vcentered">
-        <thead>
-          <tr>
-            <th style="width: 20%;">Environment Prompt</th>
-            <th>Speaker 1: Young Male</th>
-            <th>Speaker 2: Elderly Female</th>
-            <th>Speaker 3: Child</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>
-              <img src="static/images/scene_street.jpg" alt="Street" style="width:120px; border-radius: 8px; display:block; margin:auto;">
-              <strong>Scene:</strong> City Street
-            </td>
-            <td>
-              <strong>Text:</strong> "I think I might be late."<br>
-              <audio src="static/audio/demo2/street_male.wav" controls preload="none" style="width:100%; margin-top:10px;"></audio>
-            </td>
-            <td>
-              <strong>Text:</strong> "The traffic is always so loud here."<br>
-              <audio src="static/audio/demo2/street_elderly.wav" controls preload="none" style="width:100%; margin-top:10px;"></audio>
-            </td>
-            <td>
-              <strong>Text:</strong> "Can we get some ice cream?"<br>
-              <audio src="static/audio/demo2/street_child.wav" controls preload="none" style="width:100%; margin-top:10px;"></audio>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-
-      <h3 class="title is-4 has-text-centered" style="margin-top: 40px;">Demo 3: Comparison with Baseline Models</h3>
-      <p class="subtitle has-text-centered">Direct comparison on the same multimodal prompt.</p>
-      <table class="table is-bordered is-striped is-fullwidth is-vcentered">
-        <thead>
-          <tr>
-            <th style="width: 15%;">Visual Context</th>
-            <th>Text</th>
-            <th>Baseline Model</th>
-            <th>VividVoice (Ours)</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>
-              <img src="static/images/compare_context1.jpg" alt="Context Image 1" style="width:120px; border-radius: 8px;">
-            </td>
-            <td>A young woman speaks in a reverberant hall: "The echo in here is amazing."</td>
-            <td>
-              <audio src="static/audio/compare1/baseline.wav" controls preload="none"></audio>
-            </td>
-            <td>
-              <audio src="static/audio/compare1/ours.wav" controls preload="none"></audio>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <img src="static/images/compare_context2.jpg" alt="Context Image 2" style="width:120px; border-radius: 8px;">
-            </td>
-            <td>An elderly man speaks on a windy mountain top: "You can hear the wind whistling."</td>
-            <td>
-              <audio src="static/audio/compare2/baseline.wav" controls preload="none"></audio>
-            </td>
-            <td>
-              <audio src="static/audio/compare2/ours.wav" controls preload="none"></audio>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+      </div>
   </div>
 </section>
 
